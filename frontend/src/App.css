@@ -1,0 +1,68 @@
+.slider {
+  position: relative;
+  height: 380px; /* Adjust this to your desired height */
+  width: 100%;   /* Full width of the container */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  background-size: contain; /* or use 'cover' depending on your preference */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide.current {
+  display: inline;
+  opacity: 1;
+}
+
+.next {
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.prev {
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  left: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.next:hover,
+.prev:hover {
+  opacity: 1;
+}
+/*background Images */
+
+.slide:first-child {
+  background: url("https://cdn.dribbble.com/userupload/11399137/file/original-6cc27e97ebc6228402f43fa1bc36f789.jpg") no-repeat center;
+  background-size: cover; /* Ensures the image covers the entire slide */
+}
+
+/* Second slide */
+.slide:nth-child(2) {
+  background: url("https://cdn.dribbble.com/userupload/11399138/file/original-70ce080d5dcef82ca12bf882d8c99aa7.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* Third slide */
+.slide:nth-child(3) {
+  background: url("https://cdn.dribbble.com/userupload/11399133/file/original-f9c247ac5c5119861c9f600ebcb7b0fc.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* Fourth slide */
+.slide:nth-child(4) {
+  background: url("https://cdn.dribbble.com/userupload/11399134/file/original-ef220b786a91ab9415619f77fc3a53eb.jpg") no-repeat center;
+  background-size: cover;
+}
